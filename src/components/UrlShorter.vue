@@ -55,6 +55,8 @@ const shortenUrl = async () => {
 
 			const data = await res.json();
 
+			console.log("API response:", data);
+
 			shortenedUrls.value = [
 				{
 					original: fullUrl.value,
